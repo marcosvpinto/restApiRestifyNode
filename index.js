@@ -40,5 +40,5 @@ server.listen(config.port, () => {
     db.once('open', () => {
         require('./routes')(server);
         console.log('Server is listening on port ${config.port}');
-    })
-})
+    });
+});
